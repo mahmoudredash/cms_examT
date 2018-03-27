@@ -17,3 +17,85 @@ li.dropdown:hover>.dropdown-menu {
     align-content: center;
     text-align: center;
 }
+
+
+.content{
+    background-color: #084081;
+    color: #21b82e;
+    margin:20px auto;
+    float: left;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.static{
+    background-color: #bfbfbf41;
+    margin:10px 0px;
+    padding: 10px;
+
+
+}
+.static > form > label{
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.static > form {
+    padding: 20px;
+
+
+}
+.klir{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold
+}
+.trh{
+    margin-bottom: 20px;
+}
+
+
+.aq{
+    min-width: 40%;
+}
+.aq:last-child{
+    margin-left:5%;
+
+}
+.pgat{
+    border-radius: 5px;
+}
+.klche > input{
+margin-left: 10%;
+}
+.ah{
+    margin-left: 20%;
+    min-width: 50%;
+    font-weight: bolder;
+}
+
+
+.es{
+    background-color: #003;
+    color: #fff;
+    padding:   10px;
+    margin-bottom: 10px;
+    min-height: 100px
+}
+.heer{
+    float: left;
+    margin: 2%;
+    width: 320px;
+    min-height: 320px;
+}
+.mthh{
+background-color: #084081a8;
+}
+
+.mkl{
+    border: 1px solid #fcf8e3;
+    border-radius: 15px;
+    padding: 2%;
+}

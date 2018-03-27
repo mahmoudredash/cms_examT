@@ -53,21 +53,23 @@ if (mysqli_num_rows($result)>0) {
                 } //after  close if (){}
 
                 mysqli_free_result($result); //remove data
-
+                // Edit_mune.php
                 ?>
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">Admin Tooles <b class="caret"></b></a>                    <ul class="dropdown-menu">
                         <li><a href="?item=v">VisibleM</a></li>
                         <li><a href="create_menu.php">Create New Menu</a></li>
-                        <li><a href="#">Sent Items</a></li>
+                        <li><a href="Edit_mune.php">Edit Menu</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Trash</a></li>
+                        <li><a href="New_page.php">New Page</a></li>
+                        <li><a href="Edit_page.php">Edit Page</a></li>
+                        <li><a href="manag_admin.php">Manag Admin</a></li>
                     </ul>
                 </li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Logout</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </div>
     </nav>

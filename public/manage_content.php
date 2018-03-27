@@ -1,16 +1,23 @@
-
+<?php session_start();?>
 <?php
-include("../include/layout/header.php");
+
 include_once("../include/functions.php");
+include_once("../include/session.php");
+check_login();
+include("../include/layout/header.php");
 include_once("../include/connectDB.php");
 
 include_once ("../include/layout/navbar.php");
 
+
 ?>
 
   <div class="container theme-showcase" role="main">
+    <div class="container">
+        <?php if(isset($_SESSION['mgs'])){  echo msgSuccessLAdmin();} ?>
+    </div>
     <div class="jumbotron">
-      <h1>This Manage Content Page</h1>
+      <h2>Welcom <?php echo $_SESSION["admin_username"];?>  In  Manage Content Page</h2>
       <p>this is exampel for test your CMS</p>
     </div>
   </div>
@@ -80,7 +87,7 @@ include_once ("../include/layout/navbar.php");
 
 
 
-      
+
 <?php
 include("../include/layout/footer.php");
 ?>

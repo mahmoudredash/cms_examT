@@ -1,7 +1,10 @@
-
+<?php session_start();?>
 <?php
-include("../include/layout/header.php");
+
 include_once("../include/functions.php");
+include_once("../include/session.php");
+check_login();
+include("../include/layout/header.php");
 include_once("../include/connectDB.php");
 
 

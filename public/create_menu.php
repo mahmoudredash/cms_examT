@@ -1,3 +1,4 @@
+<?php session_start();?>
 <?php
 /**
  * Created by PhpStorm.
@@ -6,8 +7,10 @@
  * Time: 02:52 م
  */
 
-include("../include/layout/header.php");
 include_once("../include/functions.php");
+include_once("../include/session.php");
+check_login();
+include("../include/layout/header.php");
 include_once("../include/connectDB.php");
 
 include_once ("../include/layout/navbar.php");
@@ -19,10 +22,14 @@ include_once ("../include/layout/navbar.php");
 
 
 <!--Start Form -->
+<br/>
+<div class="container">
+            <?php echo  msgd();?>
+            <?php  $errs = err();
+            erorr_function($errs);?>
+</div>
 
-
-
-<br/> <br/>
+ <br/>
 
 <div class="form-group container-fluid">
 
@@ -58,7 +65,7 @@ include_once ("../include/layout/navbar.php");
                 ?>
             </select>
         </div>
-        
+
         <button type="submit" name="submit" class="btn btn-default">Submit</button>
     </form>
 
